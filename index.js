@@ -4,7 +4,7 @@ require("dotenv").config();
 const fs = require("node:fs");
 
 // prompt user to ask a question
-process.stdout.write("\nAsk me a question: ");
+process.stdout.write("\nHi there! Ask me a question: ");
 
 // proccess the prompt
 process.stdin.on('data', data => {
@@ -24,25 +24,24 @@ const openai = new OpenAi({
 
 
 // main function to process inputs and outputs
-const main = async (data) => {
+const main = async (prompt) => {
   const completion = await openai.chat.completions.create({
-    messages: [{ role: "system", content: data }],
+    messages: [{ role: "system", content: prompt }],
     model: "deepseek-chat",
   });
 
-  const aiResponse = completion.choices[0].message.content;
+  const aiResponse = "\n AI: " + completion.choices[0].message.content;
 
-  fs.appendFile("conversations.txt", `\n${data}`, (err) => {
+  fs.appendFile("conversations.txt", `\n User: ${prompt}`, (err) => {
     if (err) throw err;
+    fs.appendFile("conversations.txt", aiResponse , (err) => {
+      if (err) throw err;
   });
 
-  fs.appendFile("conversations.txt", aiResponse , (err) => {
-    if (err) throw err;
-
     // exit process if the user says bye or exit
-    if (data == "bye" || data == "exit") process.exit();
+    if (prompt == "bye" || prompt == "exit") process.exit();
   });
 
   console.log(aiResponse);
-  process.stdout.write("\nAwaiting new prompt: ");
+  process.stdout.write("\nAwaiting next prompt: ");
 }
