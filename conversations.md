@@ -42,3 +42,6 @@
 8. **Documentation**: Refer to the official DeepSeek API documentation for detailed endpoint descriptions and advanced features.
 
 By following these steps, you can effectively use the DeepSeek API to enhance your applications with AI-driven functionalities.
+
+User: bye
+AI: Goodbye! If you have any more questions or need assistance in the future, feel free to reach out. Take care! 😊

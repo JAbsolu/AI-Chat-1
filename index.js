@@ -32,11 +32,12 @@ const main = async (prompt) => {
 
   const aiResponse = "\n AI: " + completion.choices[0].message.content;
 
-  fs.appendFile("conversations.txt", `\n User: ${prompt}`, (err) => {
+  fs.appendFile("conversations.md", `\n User: ${prompt}`, (err) => {
     if (err) throw err;
-    fs.appendFile("conversations.txt", aiResponse , (err) => {
-      if (err) throw err;
   });
+
+  fs.appendFile("conversations.md", aiResponse , (err) => {
+    if (err) throw err;
 
     // exit process if the user says bye or exit
     if (prompt == "bye" || prompt == "exit") process.exit();
