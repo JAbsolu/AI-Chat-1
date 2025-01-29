@@ -45,3 +45,15 @@ By following these steps, you can effectively use the DeepSeek API to enhance yo
 
 User: bye
 AI: Goodbye! If you have any more questions or need assistance in the future, feel free to reach out. Take care! 😊
+ User: Hi there
+ AI: Hello! 👋 How can I assist you today?
+ AI: To say "I love you" in Haitian Creole, you would say:  
+**"Mwen renmen ou."** (pronounced roughly like *mwen ren-men oo*).  
+
+You can also use the contracted form in informal settings:  
+**"M renmen w."** (pronounced *m ren-men w*).  
+
+This phrase is widely understood and used to express love in Haitian Creole. 💖
+ User: Tell me how to say I love you in haitian creole
+ User: Hi
+ AI: Hello! How can I assist you today?

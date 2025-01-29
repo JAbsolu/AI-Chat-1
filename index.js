@@ -15,11 +15,11 @@ process.stdin.on('data', data => {
 
 
 // initiate open ai API connection
-const JohnDev = process.env.API_KEY;
+const API_KEY = process.env.API_KEY;
 
 const openai = new OpenAi({
   baseURL: "https://api.deepseek.com",
-  apiKey: JohnDev
+  apiKey: API_KEY
 });
 
 
@@ -30,7 +30,7 @@ const main = async (prompt) => {
     model: "deepseek-chat",
   });
 
-  const aiResponse = "\n AI: " + completion.choices[0].message.content;
+  const aiResponse = "\nAI: " + completion.choices[0].message.content;
 
   fs.appendFile("conversations.md", `\n User: ${prompt}`, (err) => {
     if (err) throw err;
@@ -40,7 +40,7 @@ const main = async (prompt) => {
     if (err) throw err;
 
     // exit process if the user says bye or exit
-    if (prompt == "bye" || prompt == "exit") process.exit();
+    if (prompt == "bye") process.exit();
   });
 
   console.log(aiResponse);
