@@ -27,10 +27,7 @@ const openai = new OpenAi({
 const main = async (prompt) => {
   const completion = await openai.chat.completions.create({
     messages: [{ role: "system", content: prompt }],
-    model: "deepseek-chat",
-    role: "trandlater",
-    max_tokens: 2000,
-    temperature: 0.2
+    model: "deepseek-chat"
   });
 
   const aiResponse = "\nAI: " + completion.choices[0].message.content;
@@ -47,5 +44,5 @@ const main = async (prompt) => {
   });
 
   console.log(aiResponse);
-  process.stdout.write("\nAwaiting next prompt: ");
+  process.stdout.write("\nYou: ");
 }

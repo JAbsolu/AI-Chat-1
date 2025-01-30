@@ -76,3 +76,7 @@ Men, premye vèsyon an pi apwopriye pou yon kontèks fòmèl oswa enfòmèl. �
 AI: "Okay, how can I say it in English?"
  You: bye
 AI: Goodbye! If you have any more questions or need assistance in the future, feel free to reach out. Take care! 😊
+AI: Hello! How can I assist you today? 😊
+ You: Hello
+ You: Hello
+AI: Hello! How can I assist you today? 😊
