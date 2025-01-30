@@ -28,11 +28,14 @@ const main = async (prompt) => {
   const completion = await openai.chat.completions.create({
     messages: [{ role: "system", content: prompt }],
     model: "deepseek-chat",
+    role: "trandlater",
+    max_tokens: 2000,
+    temperature: 0.2
   });
 
   const aiResponse = "\nAI: " + completion.choices[0].message.content;
 
-  fs.appendFile("conversations.md", `\n User: ${prompt}`, (err) => {
+  fs.appendFile("conversations.md", `\n You: ${prompt}`, (err) => {
     if (err) throw err;
   });
 

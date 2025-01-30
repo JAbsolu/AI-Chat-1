@@ -57,3 +57,22 @@ This phrase is widely understood and used to express love in Haitian Creole. �
  User: Tell me how to say I love you in haitian creole
  User: Hi
  AI: Hello! How can I assist you today?
+ You: Bonjour, mwen bezwen aprann pale anglais, mwen bezwen pou'w transle sam di a en englais
+AI: Bonjou! Mwen ka ede w tradwi sa ou di an anglè. Tanpri, di m sa ou vle tradwi, epi mwen pral fè sa pou ou. 😊
+ You: Kijan poum di, Bonjour, mwen rele Jay
+AI: Kijan pou di "Bonjour, mwen rele Jay" an kreyòl ayisyen se:
+
+**"Bonjou, mwen rele Jay."**
+
+Men kèk detay:
+- **Bonjou** vle di "bonjour" oswa "bon maten" (itilize anvan midi).
+- **Mwen rele** vle di "mwen rele" oswa "non mwen se".
+- **Jay** se non ou, ou ka kenbe li menm jan an.
+
+Si ou vle di li nan yon fòm plis enfòmèl, ou ta ka di:  
+**"Alo, mwen se Jay."**  
+Men, premye vèsyon an pi apwopriye pou yon kontèks fòmèl oswa enfòmèl. 😊
+ You: Oke, kijan mwen ka di'l en anglais?
+AI: "Okay, how can I say it in English?"
+ You: bye
+AI: Goodbye! If you have any more questions or need assistance in the future, feel free to reach out. Take care! 😊
