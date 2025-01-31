@@ -1,4 +1,14 @@
 {
+  "name": "invest_ai",
+  "version": "1.0.0",
+  "description": "An an app that leveres openAI, DeepSeek API, to get stock data, relevent stock articles and determines whether a stock is a good or bad investment",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johnson Absolu",
+  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
     "openai": "^4.80.1"
