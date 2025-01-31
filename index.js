@@ -51,7 +51,7 @@ const main = async (prompt) => {
 
   const date = formatDate(new Date());
 
-  fs.appendFile(`chat_log/${date}-log.txt`, `\nYou: ${prompt}`, (err) => {
+  fs.appendFile(`chat_log/${date}-log.txt`, `\n\nYou: ${prompt}`, (err) => {
     if (err) throw err;
   });
 
