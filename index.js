@@ -51,11 +51,11 @@ const main = async (prompt) => {
 
   const date = formatDate(new Date());
 
-  fs.appendFile(`chat_log/${date}-log.txt`, `\n\nYou: ${prompt}`, (err) => {
+  fs.appendFile(`chat_log/${date}-log.md`, `\n\nYou: ${prompt}`, (err) => {
     if (err) throw err;
   });
 
-  fs.appendFile(`chat_log/${date}-log.txt`, aiResponse , (err) => {
+  fs.appendFile(`chat_log/${date}-log.md`, aiResponse , (err) => {
     if (err) throw err;
 
     // exit process if the user says bye or exit

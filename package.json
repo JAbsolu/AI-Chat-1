@@ -1,7 +1,7 @@
 {
   "name": "invest_ai",
   "version": "1.0.0",
-  "description": "An an app that leveres openAI, DeepSeek API, to get stock data, relevent stock articles and determines whether a stock is a good or bad investment",
+  "description": "An AI app that leveres openAI, DeepSeek API, to get stock data, relevent stock articles and determines whether a stock is a good or bad investment.",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
