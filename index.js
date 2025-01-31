@@ -2,9 +2,19 @@ const OpenAi = require("openai");
 process.stdin.setEncoding('utf-8');
 require("dotenv").config();
 const fs = require("node:fs");
+const fetch = require('node-fetch');
+const getStockData = require("./custom-modules/get-stock-data");
+const articlesToText = require("./custom-modules/articles-to-text");
+
+const API_KEY = process.env.RAPID_API_KEY;
+
+
+articlesToText(["https://www.pymnts.com/earnings/2025/apple-tops-a-billion-subscribers-as-services-climb-to-record-revenue/"]);
+getStockData("AAPL");
+
 
 // prompt user to ask a question
-process.stdout.write("\nHi there! Ask me a question: ");
+process.stdout.write("\nHi there! How can I help you today: ");
 
 // proccess the prompt
 process.stdin.on('data', data => {
@@ -15,13 +25,12 @@ process.stdin.on('data', data => {
 
 
 // initiate open ai API connection
-const API_KEY = process.env.API_KEY;
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
 
 const openai = new OpenAi({
   baseURL: "https://api.deepseek.com",
-  apiKey: API_KEY
+  apiKey: DEEPSEEK_API_KEY
 });
-
 
 // main function to process inputs and outputs
 const main = async (prompt) => {

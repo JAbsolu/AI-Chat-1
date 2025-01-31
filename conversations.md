@@ -80,3 +80,6 @@ AI: Hello! How can I assist you today? 😊
  You: Hello
  You: Hello
 AI: Hello! How can I assist you today? 😊
+ You: 
+AI:  当然可以！以下是一个关于“坚持与成功”的励志故事：
+
