@@ -16,7 +16,7 @@ const getStockNews = async (param) => {
     const response = await fetch(url, options);
     const result = await response.json();
 
-    console.log(result.data.main.stream);
+    console.log( result.data.main.stream, `Total news articles found: ${result.data.main.stream.length}`);
     return result.data.main.stream;
 
   } catch (error) {
