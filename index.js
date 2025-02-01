@@ -12,13 +12,12 @@ const useDeepSeekAi = require("./app_modules/useDeepSeek");
 // getStockNews(["AAPL"]);
 
 
-// // prompt user to ask a question
 process.stdout.write("\nHi there! How can I help you today: ");
 
 // proccess the prompt
 process.stdin.on('data', data => {
-  //capture the prompt from the terminal
   const prompt = data.trim();
+
   // useDeepSeekAi(prompt);
   useOpenAIo4mini(prompt);
 });
