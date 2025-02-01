@@ -1,5 +1,6 @@
 const OpenAi = require("openai");
 const fs = require("node:fs");
+const getSticker = require("./get-tickers");
 process.stdin.setEncoding('utf-8');
 
 const API_KEY = process.env.DEEPSEEK_API_KEY;
