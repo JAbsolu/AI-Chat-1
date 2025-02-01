@@ -7,10 +7,6 @@ const getStockNews = require("./app_modules/get-stock-news");
 const useOpenAIo4mini = require("./app_modules/useOpenAI");
 const useDeepSeekAi = require("./app_modules/useDeepSeek");
 
-// articlesToText(["https://www.pymnts.com/earnings/2025/apple-tops-a-billion-subscribers-as-services-climb-to-record-revenue/"]);
-// getStockData("AAPL");
-// getStockNews(["AAPL"]);
-
 
 process.stdout.write("\nHi there! How can I help you today: ");
 
@@ -18,6 +14,6 @@ process.stdout.write("\nHi there! How can I help you today: ");
 process.stdin.on('data', data => {
   const prompt = data.trim();
 
-  // useDeepSeekAi(prompt);
-  useOpenAIo4mini(prompt);
+  useDeepSeekAi(prompt);
+  // useOpenAIo4mini(prompt);
 });

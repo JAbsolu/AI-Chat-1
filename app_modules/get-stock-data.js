@@ -26,7 +26,6 @@ const getStockData = async (symbols) => {
       'x-rapidapi-host': 'yahoo-finance15.p.rapidapi.com'
     }
   };
-  console.log(url);
   
 
   try {
