@@ -41,6 +41,7 @@ const main = async (prompt) => {
 
     process.stdout.write(chunk.choices[0]?.delta?.content || "");
   }
+  process.stdout.write("\n\nEnter new ticker symbol: ");
 }
 
 module.exports = main;
