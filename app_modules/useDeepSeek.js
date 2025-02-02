@@ -19,7 +19,7 @@ const main = async (prompt) => {
     temperature: 0,
   });
 
-  const aiResponse = "\nAI: " + await completion.choices[0].message.content;
+  const aiResponse = "\n" + await completion.choices[0].message.content;
 
   //get today's date
   const formatDate = (date) => {
@@ -31,11 +31,11 @@ const main = async (prompt) => {
 
   const date = formatDate(new Date());
 
-  fs.appendFile(`chat_log/${date}-log.md`, `\nYou: ${prompt}`, (err) => {
+  fs.appendFile(`DeepSeek_Log/${date}-log.md`, `\nYou: ${prompt}`, (err) => {
     if (err) throw err;
   });
 
-  fs.appendFile(`chat_log/${date}-log.md`, `${aiResponse}\n`, (err) => {
+  fs.appendFile(`chat_log/${date}-log.md`, `DeepSeek: ${aiResponse}\n`, (err) => {
     if (err) throw err;
 
     // exit process if the user says bye or exit
