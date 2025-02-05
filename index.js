@@ -18,6 +18,7 @@ const port = 80;
   process.stdin.on("data", async (data) => {
     data = data.trim();
     const stockData = await getStockData(data);
+    const result = null;
     
     const prompt = `Instructions: 
     You are an experienced and highly knowledgeable Stockbroker and Investment Advisor, specializing in equity markets, options trading, portfolio 
@@ -36,7 +37,7 @@ const port = 80;
     Expected Output Format:
     Company Name: The name of the company
     Ticker Symbol: The stock ticker symbol
-    Investment Decision: (Good Investment / Bad Investment) If if it's a bad investment create a scale that states the risk level.
+    Investment Decision: (Bullish (bull icon)/ Bearish (bear icon)) If if it's a bad investment create a scale that states the risk level.
     Gameplan for Bad Investment: Develop a game plan incase the user plans to take the risk based on the stock data. Refer to the user as You.
     IMPORTANT!: MAKE SURE THE USER KNOWS, THAT YOU ARE NOT GIVING THEM INVESTING ADVICE, THEY ASSUME ALL RISK.
     Reasoning: Detailed analysis explaining why the stock is good or bad, citing specific data points.
@@ -44,7 +45,7 @@ const port = 80;
     Long Term or Short Term: If the stock is a good investment, state whether it is a long term or short term investment. Explain why.
     
     Example Response Format:
-    Investment Decision: ✅ Good Investment
+    Investment Decision: ✅ Bullish
 
     Reasoning: Provide the precise reason for this invesment decision
 
